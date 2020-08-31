@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('VErify Branch') {
             steps {
-                echo 'Hello World'
+                echo "${GIT_BRANCH}"
             }
         }
     } 
-}     
+}   
